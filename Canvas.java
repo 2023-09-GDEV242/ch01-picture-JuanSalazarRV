@@ -118,7 +118,10 @@ public class Canvas
 
     /**
      * Set the foreground color of the Canvas.
-     * @param  newColor   the new color for the foreground of the Canvas 
+     * @param  newColor the new color for the foreground of the Canvas 
+     * 
+     * version 09.01.2023:
+     * "beach","ocean","gray" and "light gray" colors were added.
      */
     public void setForegroundColor(String colorString)
     {
@@ -142,6 +145,18 @@ public class Canvas
         }
         else if(colorString.equals("white")) {
             graphic.setColor(Color.white);
+        }
+        else if(colorString.equals("beach")){
+            graphic.setColor(new Color(253, 216, 181));
+        }
+        else if (colorString.equals("ocean")){
+            graphic.setColor(new Color(146, 196, 238));
+        }
+        else if (colorString.equals("gray")){
+            graphic.setColor(new Color(105, 105, 105));
+        }
+        else if(colorString.equals("light gray")){
+            graphic.setColor(new Color(192, 192, 192));
         }
         else {
             graphic.setColor(Color.black);
